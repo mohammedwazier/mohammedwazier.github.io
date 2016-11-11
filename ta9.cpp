@@ -2,19 +2,19 @@
 
 using namespace std;
 // Ganti nama functionnya sama nama variabelnya
-// nilai1 sama nilai2 itu vatiabel
+// nilai1 sama nilai2 itu variabel
 // double itu tipe data functionnye
 double function1(long double nilai1, long double nilai2){
 	return nilai1*nilai2;
 }
 // Ganti nama functionnya sama nama variabelnya
-// nilai1 sama nilai2 itu vatiabel
+// nilai1 sama nilai2 itu variabel
 // double itu tipe data functionnye
 double function2(long double nilai1, long double nilai2){
 	return nilai1/nilai2;
 }
 // Ganti nama functionnya sama nama variabelnya
-// nilai1 sama nilai2 itu vatiabel
+// nilai1 sama nilai2 itu variabel
 // double itu tipe data functionnye
 int function3(int nilai1, int nilai2){
 	return nilai1%nilai2;
