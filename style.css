@@ -2,3 +2,12 @@ body{
 	margin:0;
 	padding:0;
 }
+
+.main{
+	position: relative;
+	width: 800px;
+	height: auto;
+	min-height: 500px;
+	background: #000;
+	margin: auto;
+}
