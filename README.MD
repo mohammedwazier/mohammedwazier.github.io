@@ -1,5 +1,4 @@
 #README
 
-this website is my fucking portofolio
-
-ON PROGRESS BABY
+My personal website
+Using HTML5, CSS3, Javascript and JQuery
