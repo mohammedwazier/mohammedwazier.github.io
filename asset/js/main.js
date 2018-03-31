@@ -1,8 +1,12 @@
-<script type="text/javascript">
-var dataPage;
+var dataPage=null;
 $(document).ready(function(){
-	switchPage("home");
+	if(!dataPage){
+		switchPage("home");
+	}else{
+		switchPage(dataPage);
+	}
 	$('#blackPage').hide();
+
 });
 function closeBlack(){
 	$("#blackPage").fadeOut();
@@ -11,16 +15,29 @@ function closeBlack(){
 
 function switchPage(inputData){
 	dataPage=inputData;
-	$.ajax({
-		type:'POST',
-		url:'switch.php',
-		data:'page='+inputData,
-		success:function(data){
-			changeStatePage(inputData);
-			// console.log(data);
-			$('#content').html(data);
-		}
-	});
+	changeStatePage(inputData);
+	if(inputData=="home"){
+		$.ajax({
+			url:'asset/page/home.html',
+			success:function(data){
+				$('#content').html(data);
+			}
+		});
+	}else if(inputData=="porto"){
+		$.ajax({
+			url:'asset/page/porto.html',
+			success:function(data){
+				$('#content').html(data);
+			}
+		});
+	}else if(inputData=="cv"){
+		$.ajax({
+			url:'asset/page/cv.html',
+			success:function(data){
+				$('#content').html(data);
+			}
+		});
+	}
 }
 function changeStatePage(input){
 	if(input=="home"){
@@ -37,4 +54,3 @@ function changeStatePage(input){
 		$("#cv").removeClass("main").removeClass("other").addClass("main");
 	}
 }
-</script>
