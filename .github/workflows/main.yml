@@ -14,4 +14,5 @@ jobs:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
-          script: cd /var/www/mohammedwazier.github.io/ && git pull
+          port: ${{ secrets.PORT }}
+          script: cd ${{ secrets.PATH }} && git pull
