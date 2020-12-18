@@ -28,7 +28,7 @@ jobs:
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASSWORD }}
         key:  ${{ secrets.SSHKEY }}
-        passphrase:  ${{ secrets.PASSPHRASE }}
+        passphrase:  ${{ secrets.PASSWORD }}
         name: id_rsa  
         port: 22
         script: ls
