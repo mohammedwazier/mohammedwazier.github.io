@@ -16,4 +16,4 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           key: ${{ secrets.PRIV_PRIV_KEY_RSA2 }}
           port: ${{ secrets.PORT }}
-          scripts: cd ${{ secrets.PATH }} && git pull
+          script: cd ${{ secrets.PATH }} && git pull
