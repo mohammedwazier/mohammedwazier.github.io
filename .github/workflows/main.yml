@@ -15,3 +15,4 @@ jobs:
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
           port: cd ${{ secrets.PATH }}
+          key: ${{ secrets.PRIV_PRIV_KEY_RSA2 }}
