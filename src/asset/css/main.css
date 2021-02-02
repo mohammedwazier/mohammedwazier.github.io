@@ -1,0 +1,136 @@
+html, body{
+    overflow-x: hidden;
+    background-color: #fefefe;
+    scroll-behavior: smooth!important;
+}
+
+.nav-bg-white{
+    background-color: #FFFFFF!important;
+}
+
+.navbar, .navbar-big{
+    transition: .3s;
+}
+
+.navbar-big{
+    padding: 1rem 1rem;
+    background-color: #ffffff;
+}
+
+.scroll-top{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #1e3799;
+    color: #ffffff;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: .5s;
+    border: 2px solid #ffffff;
+}
+
+.big-font-banner{
+    font-size: 5rem;
+    font-weight: bold;
+    line-height: 4rem!important;
+}
+
+.footer-bot{
+    background-color: #1e3799;
+    color: #fff;
+}
+
+.box-left-top{
+    min-width: 30%;
+    height: 300px;
+    /* opacity: ; */
+    background-color: #1e3799;
+    position: absolute;
+    z-index: inherit;
+    top: 0;
+    left: 0;
+}
+.box-right-top{
+    min-width: 35%;
+    height: 300px;
+    /* opacity: ; */
+    background-color: #1e3799;
+    position: absolute;
+    z-index: inherit;
+    top: 0;
+    right: 0;
+}
+
+.text-fade-7{
+    opacity: .7;
+}
+
+.slick-track {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card__background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    /* background: #2fd4dc; */
+    z-index: -1;
+    text-align: left;
+}
+
+.card > * {
+    transition: opacity 350ms;
+}
+
+.center-image, .card__background img {
+    width: 100%;
+    min-height: 100%;
+    position: absolute;
+    /* top: 50%;
+    transform: translateY(-50%); */
+    top: 0;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.blend-image, .card__background img {
+    /* filter: brightness(250%) grayscale(100%); */
+    /* mix-blend-mode: screen; */
+}
+
+.card__background::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to top, #fff 0, rgba(255, 255, 255, 0) 75%);
+}
+
+.cards {
+    background: #fff;
+    display: flex;
+    padding: 2em;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    height: 350px;
+    box-shadow: 0 30px 50px -25px rgb(0 0 0 / 25%);
+    color: #444444;
+}
